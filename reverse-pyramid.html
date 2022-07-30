@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1></h1>
+    <script>
+        let n = 5;
+        let string = "";
+        // External loop
+        for (let i = 0; i < n; i++) {
+            // printing spaces
+            for (let j = 0; j < i; j++) {
+                string += " ";
+            }
+            // printing star
+            for (let k = 0; k < 2 * (n - i) - 1; k++) {
+                string += "*";
+            }
+            string += "\n";
+        }
+        document.querySelector('h1').innerText = string;
+    </script>
+</body>
+
+</html>
